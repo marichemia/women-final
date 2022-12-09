@@ -1,0 +1,153 @@
+/* header */
+
+@media (max-width:1200px) {
+    header {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav {
+        width: 576px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 70px;
+    }
+
+    .nav-links ul {
+        width: 431px;
+    }
+
+    .nav-links ul li {
+        margin-left: -7px;
+    }
+}
+
+@media (max-width:1205px) {
+    header {
+        padding: 0;
+        padding-top: 2px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media (max-width: 745px) {
+
+    header {
+        position: fixed;
+    }
+
+    .design {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+
+        position: fixed;
+        right: 2%;
+
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .nav-links ul {
+        width: 100%;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 25px;
+    }
+
+    .fa-circle-xmark {
+        color: white;
+        font-size: 25px;
+    }
+
+    .nav-links ul {
+        transform: translateY(-100%);
+        z-index: 99;
+        flex-direction: column;
+
+    }
+
+    #showMenu {
+        transform: translateY(0);
+    }
+
+    .burger-style {
+        position: fixed;
+        height: 250px;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding-left: 25px;
+        background-color: #000000;
+    }
+}
+
+@media (max-width:430px) {
+    .burger-style {
+        width: 300px;
+    }
+
+    .nav-links ul {
+        width: 100%;
+    }
+}
+
+/* slider section */
+
+@media (max-width: 1110px) {
+    .slider-navigation i {
+        top: 300px;
+        z-index: 9;
+    }
+}
+
+@media (max-width: 710px) {
+
+    .slider-navigation i {
+        top: 200px;
+        font-size: 40px;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .logo {
+        border: none;
+    }
+
+    .nav-links ul {
+        top: 49.7px;
+        padding-top: 10px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 384px) {
+    .slider-navigation i {
+        color: #000000;
+        top: 235px;
+    }
+
+}
+
+@media (max-width: 334px) {
+    .slider-navigation i {
+        color: #000000;
+        top: 210px;
+        font-size: 25px;
+    }
+
+}
