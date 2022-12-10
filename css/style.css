@@ -6,6 +6,11 @@ body {
     align-items: center;
 }
 
+button:hover {
+    color: #1eee0b;
+    background-color: #448606;
+}
+
 header {
     width: 100%;
     height: 80px;
@@ -105,6 +110,7 @@ nav {
     height: 800px;
     position: relative;
     top: 14px;
+    margin-bottom: 200px;
 }
 
 .slider-container {
@@ -140,10 +146,12 @@ nav {
     height: 780p;
     position: absolute;
     display: none;
+    margin-bottom: 200px;
 }
 
 .main {
     display: block;
+
 }
 
 .ellipse {
@@ -192,6 +200,70 @@ nav {
     position: relative;
     top: 65px;
 }
+
+/* section 2 */
+
+.section-2 {
+    margin-top: 300px;
+    width: 1161px;
+    height: 403px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bamboo-cap {
+    width: 609px;
+    height: 100%;
+    background-image: url(../images/bamboo-cap.png);
+}
+
+.section-2-txt-container {
+    width: 465px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-2-txt-container h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333B41;
+    text-align: left;
+}
+
+.section-2-txt-container h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    text-align: left;
+}
+
+.section-2-txt-container p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    text-align: left;
+}
+
+.section-2-flower {
+    position: absolute;
+    right: 0;
+    top: 1200px;
+}
+
 
 .none {
     display: none;

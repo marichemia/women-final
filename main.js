@@ -62,3 +62,29 @@ function nextImage(direction) {
     }
     images[index].classList.add('main');
 }
+
+left.addEventListener('click', function () {
+    document.getElementsByClassName('main')[0].classList.add('animate__animated');
+    document.getElementsByClassName('main')[0].classList.add('animate__fadeIn');
+});
+
+right.addEventListener('click', function () {
+    document.getElementsByClassName('main')[0].classList.add('animate__animated');
+    document.getElementsByClassName('main')[0].classList.add('animate__fadeIn');
+})
+
+/* fetch data 
+let animalName = 'cheetah';
+fetch('https://api.api-ninjas.com/v1/animals?name=' + animalName, {
+    method: 'GET',
+    headers: {
+        'X-Api-Key': 'h2ZCRhxfUdCZiVLQclYyMg==VfVjOJlKDyriefTU'
+    }
+})
+    .then(response => {
+        if (!response.ok) throw Error(response.statusText);
+        return response.json();
+    })
+    .then(data => { console.log(data) })
+    .catch(error => console.log(error));
+    */
