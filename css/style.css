@@ -75,6 +75,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .nav-links a {
@@ -86,7 +87,7 @@ nav {
 }
 
 #active-link {
-    color: #F9804B;
+    color: #1eee0b;
 }
 
 .design {
@@ -143,6 +144,53 @@ nav {
 
 .main {
     display: block;
+}
+
+.ellipse {
+    position: absolute;
+    left: 11%;
+    top: 2%;
+    width: 465px;
+    height: 465px;
+    background-color: #448606;
+    border-radius: 50%;
+}
+
+.page-heading {
+    position: absolute;
+    left: 14%;
+    top: 14%;
+
+    text-transform: uppercase;
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: 700;
+    font-size: 106.5px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.page-heading span {
+    color: #b0f809;
+}
+
+.watch-btn {
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #b0f809;
+    border: none;
+    color: #448606;
+    font-weight: 700;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+
+.slider-container {
+    position: relative;
+    top: 65px;
 }
 
 .none {
