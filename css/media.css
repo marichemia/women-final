@@ -355,6 +355,10 @@
         width: auto;
     }
 
+    .animal-block {
+        margin-left: 5px;
+    }
+
 
 }
 
@@ -398,5 +402,76 @@
 
     .our-animals {
         width: 315px;
+    }
+}
+
+/* section 4 */
+
+@media (max-width: 1155px) {
+    .section-4-txt-container {
+        width: 800px;
+    }
+}
+
+@media (max-width: 955px) {
+    .section-4 {
+        height: 1300px;
+    }
+
+    .section-4-content {
+        height: 1200px;
+    }
+
+    .section-4-txt-container {
+        width: 600px;
+        height: auto;
+    }
+
+    .section-4-img-container {
+        width: auto;
+        height: auto;
+    }
+
+    .section-4-img-container h2 {
+        margin-bottom: 30px;
+    }
+
+    .how-it-works {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 754px) {
+
+    .section-4 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-4-content {
+        width: 450px;
+        padding: 0;
+    }
+
+    .section-4-txt-container h4,
+    .section-4-txt-container h3 {
+        display: none;
+    }
+
+    .section-4-txt-container p {
+        width: 300px;
+        height: auto;
+    }
+
+    .section-4-txt-container h2 {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .section-4-txt-container {
+        width: 300px;
+        margin-top: 50px;
     }
 }
