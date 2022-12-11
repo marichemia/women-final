@@ -1,4 +1,4 @@
-/* burger menu */
+//burger menu
 
 const menu = document.getElementById("menu");
 const menuItems = document.querySelectorAll("nav-link");
@@ -27,7 +27,7 @@ menuItems.forEach(function (menuItem) {
     menuItem.addEventListener('click', toggleMenu);
 });
 
-/* slider */
+//slider 
 
 const left = document.querySelector('.fa-chevron-left');
 const right = document.querySelector('.fa-chevron-right');
@@ -73,18 +73,34 @@ right.addEventListener('click', function () {
     document.getElementsByClassName('main')[0].classList.add('animate__fadeIn');
 })
 
-/* fetch data 
-let animalName = 'cheetah';
-fetch('https://api.api-ninjas.com/v1/animals?name=' + animalName, {
-    method: 'GET',
-    headers: {
-        'X-Api-Key': 'h2ZCRhxfUdCZiVLQclYyMg==VfVjOJlKDyriefTU'
-    }
-})
-    .then(response => {
-        if (!response.ok) throw Error(response.statusText);
-        return response.json();
+// fetching animal data
+
+let animals = ['panda', 'Harpy Eagle', 'gorilla', 'sloth', 'cheetah', 'penguin'];
+let nameParagraph = document.getElementsByClassName('name');
+let lifespanParagraphs = document.getElementsByClassName('lifespan');
+let populationSizeParagraphs = document.getElementsByClassName('population');
+let dietParagraphs = document.getElementsByClassName('diet');
+let habitatParagraphs = document.getElementsByClassName('habitat');
+let factParagraph = document.getElementsByClassName('fact');
+
+
+animals.forEach(function (animalName, index) {
+    fetch('https://api.api-ninjas.com/v1/animals?name=' + animalName, {
+        method: 'GET',
+        headers: {
+            'X-Api-Key': 'h2ZCRhxfUdCZiVLQclYyMg==VfVjOJlKDyriefTU'
+        }
     })
-    .then(data => { console.log(data) })
-    .catch(error => console.log(error));
-    */
+        .then(response => {
+            if (!response.ok) throw Error(response.statusText);
+            return response.json();
+        })
+        .then(data => {
+            nameParagraph[index].textContent = `${data[0]['name']}`;
+            lifespanParagraphs[index].textContent = `Lifespan: ${data[0]['characteristics']['lifespan']}`
+            dietParagraphs[index].textContent = `Diet: ${data[0]['characteristics']['diet']}`;
+            habitatParagraphs[index].textContent = `Habitat: ${data[0]['characteristics']['habitat']}`;
+            factParagraph[index].textContent = `${data[0]['characteristics']['slogan']}`;
+        })
+        .catch(error => console.log(error));
+})

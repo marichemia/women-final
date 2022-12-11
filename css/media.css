@@ -333,3 +333,70 @@
     }
 
 }
+
+/* section 3 */
+@media (max-width: 1165px) {
+    .section-3 {
+        width: 1110px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .animal-block:first-child {
+        display: none;
+    }
+
+    .row-1,
+    .row-2 {
+        width: auto;
+    }
+
+    .section-3 {
+        width: auto;
+    }
+
+
+}
+
+
+@media (max-width: 740px) {
+
+    .row-1,
+    .row-2 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .section-3 {
+        height: auto;
+    }
+
+    .animal-block:first-child {
+        display: flex;
+    }
+
+    .animal-block {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 465px) {
+    .animal-block {
+        width: 315px;
+        height: 500px;
+    }
+
+    .animal-block img {
+        width: 312px;
+        height: 312px;
+    }
+
+    .animal-block-txt-container {
+        justify-content: flex-end;
+    }
+
+    .our-animals {
+        width: 315px;
+    }
+}
