@@ -537,6 +537,7 @@ nav {
     justify-content: space-between;
 
     padding: 30px 120px 30px 50px;
+    z-index: 10;
 }
 
 .modal-close-btn {
