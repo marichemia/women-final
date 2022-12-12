@@ -185,9 +185,101 @@
         </div>
     </section>
     <div class="none modal" id="modal">
-
+        <i class="fa-regular fa-circle-xmark modal-close-btn"></i>
+        <form action="">
+            <div class="name-input-container">
+                <div>
+                    <label for="name">First Name:<span class="asterisk">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="lastName" class="lastName">Last Name:<span class="asterisk">*</span></label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+            </div>
+            <div class="credit-card-input">
+                <label for="credit-card">Card Number:<span class="asterisk">*</span></label>
+                <br>
+                <input type="number" name="credit-card" id="credit-card" required minlength="16" maxlength="16">
+                <br>
+                <label for="date">Expiration Date:<span class="asterisk">*</span></label>
+                <label for="cvv" class="cvv-label">CVV:<span class="asterisk">*</span></label>
+                <br>
+                <span>
+                    <input type="number" name="exp-date" id="exp-date" required minlength="2" maxlength="2">
+                    <span>/</span>
+                    <input type="number" name="exp-date" id="exp-date" required minlength="4" maxlength="4">
+                </span>
+                <span>
+                    <input type="number" name="cvv" id="cvv" required minlength="3" maxlength="3"></span>
+            </div>
+            <button class="pay-btn" type="submit">Feed a Friend</button>
+        </form>
     </div>
-    <script src="main.js"></script>
+    <section class="section-5">
+        <h3>Testimonials</h3>
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="user-info">
+                    <img src="images/user_icon.png" alt="user-img" class="user-img">
+                    <div class="user-id">
+                        <div class="name">Michael John</div>
+                        <div class="location-time">Local Austria • Today</div>
+                    </div>
+                </div>
+                <div class="user-review">
+                    Truly the best zoo I have been in with my kids. Staff was very kind and professional and allowed
+                    kids to pet the animals while also keeping them safe. My kids loved the experience and we hope to
+                    come back and have more fun with the animals.
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="user-info">
+                    <img src="images/oskar.png" alt="user-img" class="user-img">
+                    <div class="user-id">
+                        <div class="name">Oskar Samborsky</div>
+                        <div class="location-time">Local Austria • Yesterday</div>
+                    </div>
+                </div>
+                <div class="user-review">
+                    I love the work this organization is doing. I love visiting ethical zoos where they are helping
+                    animals instead of imprisoning them. I made so many new fluffy friends and I miss them already. I'm
+                    sure I'll be visiting a lot more in the future.
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="user-info">
+                    <img src="images/fredericka.png" alt="user-img" class="user-img">
+                    <div class="user-id">
+                        <div class="name">Fredericka Michelin</div>
+                        <div class="location-time">Local Austria • Yesterday</div>
+                    </div>
+                </div>
+                <div class="user-review">
+                    One of my favorite places to visit whenever I'm in town. I always bring my nephews and nieces here
+                    and they love it everytime. Can't wait to come back soon. Keep up the good work!
+                    I love to donate to good causes like this, hope those cute penguins get a delicious meal :)
+                </div>
+            </div>
+            <div class="testimonial last">
+                <div class="user-info">
+                    <img src="images/mila.png" alt="user-img" class="user-img">
+                    <div class="user-id">
+                        <div class="name">Mila Riksha</div>
+                        <div class="location-time">Local Austria • Yesterday</div>
+                    </div>
+                </div>
+                <div class="user-review">
+                    Wonderful place where you can teach your children to love and care for animals. I have been visiting
+                    this zoo with my family every year and we always have so much fun. Staff is incredible, you can tell
+                    how much they care about their animals and they are doing everything to help them recover quickly.
+
+                </div>
+            </div>
+        </div>
+        <button>Leave Feedback</button>
+    </section>
+    <script src=" main.js"></script>
 </body>
 
 </html>

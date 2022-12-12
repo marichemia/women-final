@@ -475,3 +475,84 @@
         margin-top: 50px;
     }
 }
+
+/* modal window */
+@media (max-width: 755px) {
+    .modal {
+        padding: 10px 20px 0px 20px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 746px) {
+    .modal-close-btn {
+        color: #448606;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal {
+        width: 300px;
+        padding: 20px 5px 0px 5px;
+    }
+
+    #credit-card {
+        width: 200px;
+    }
+
+    #name,
+    #lastName {
+        width: 100px;
+    }
+
+    .cvv-label {
+        position: absolute;
+        top: 67%;
+        left: -14%;
+    }
+}
+
+/* section 5 */
+
+@media (max-width: 1165px) {
+    .testimonial:last-child {
+        display: none;
+    }
+
+    .testimonials {
+        width: 900px;
+    }
+
+    .section-5 {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .section-5 {
+        height: 1200px;
+        position: relative;
+    }
+
+    .testimonials {
+        width: auto;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .testimonial {
+        margin-top: 20px;
+    }
+
+    .section-5 button {
+        margin-top: 20px;
+        width: 250px;
+    }
+}

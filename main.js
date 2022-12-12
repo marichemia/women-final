@@ -113,3 +113,8 @@ buttons.forEach(function (btn) {
         document.getElementById('modal').classList.remove('none');
     })
 })
+
+
+document.getElementsByClassName('modal-close-btn')[0].addEventListener('click', function () {
+    document.getElementById('modal').classList.add('none');
+})
