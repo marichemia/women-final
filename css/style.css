@@ -832,6 +832,65 @@ footer {
     color: #000000;
 }
 
+/* feedback modal window */
+
+#close-feedback {
+    color: #000000;
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-feedback {
+    position: fixed;
+    bottom: 2px;
+    right: 0;
+    width: 450px;
+    height: 200px;
+
+    background-color: #F1F3F2;
+    border-radius: 25px;
+    border: solid 5px #b0f809;
+    padding: 10px;
+
+
+    z-index: 10;
+}
+
+.modal-feedback p {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+}
+
+.modal-feedback input {
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: solid 2px #b0f809;
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: #b0f809;
+    color: #000000;
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: 600;
+}
+
+.thank-u-txt {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
 .none {
     display: none;
 }

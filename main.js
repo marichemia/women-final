@@ -117,3 +117,28 @@ buttons.forEach(function (btn) {
 document.getElementsByClassName('modal-close-btn')[0].addEventListener('click', function () {
     document.getElementById('modal').classList.add('none');
 })
+
+
+//modal window for feedback
+const modal = document.getElementById('modal-feedback');
+const close = document.getElementById('close-feedback');
+const feedbackBtn = document.getElementById('feedback-btn');
+const submit = document.getElementById('submit');
+const feedback = document.getElementsByClassName('feedback')[0];
+
+feedbackBtn.addEventListener('click', function () {
+    modal.classList.remove('none');
+})
+
+close.addEventListener('click', function () {
+    modal.classList.add('none');
+})
+
+submit.addEventListener('click', function () {
+    feedback.classList.add('none');
+    submit.classList.add('none');
+    modal.innerHTML = '<p class="thank-u-txt">Your Feedback Has Been Submitted!<br>Thank You</p>'
+    setTimeout(function () {
+        modal.classList.add('none');
+    }, 1500)
+})
