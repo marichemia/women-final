@@ -107,7 +107,6 @@ animals.forEach(function (animalName, index) {
 
 // modal window for form
 let buttons = Array.from(document.getElementsByClassName('donate-btn'));
-console.log(Array.isArray(buttons))
 buttons.forEach(function (btn) {
     btn.addEventListener('click', function () {
         document.getElementById('modal').classList.remove('none');

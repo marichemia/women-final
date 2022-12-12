@@ -7,8 +7,7 @@ body {
 }
 
 button:hover {
-    color: #1eee0b;
-    background-color: #448606;
+    color: #104e0b;
 }
 
 header {
@@ -750,6 +749,88 @@ form input {
     margin: 10px 15px 19px 16px;
 }
 
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #000000;
+    padding: 50px 100px 50px 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    height: 250px;
+    width: calc((100% - 200px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-content-one {
+    align-items: flex-start;
+}
+
+.footer-content-two {
+    align-items: flex-end;
+}
+
+.social-link {
+    width: auto;
+    height: 30px;
+}
+
+.social {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social i {
+    color: white;
+    font-size: 25px;
+}
+
+.social span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+
+.footer-content-two input {
+    width: 200px;
+    height: 30px;
+    border: solid 1px #09f815;
+    background-color: transparent;
+    color: white;
+}
+
+.footer-content-two h3 {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.email-submit {
+    height: 30px;
+    width: 70px;
+    border: solid 1px #1bac3f;
+    background-color: white;
+    color: #1bac3f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.email-submit:hover {
+    background-color: #09f815;
+    color: #000000;
+}
 
 .none {
     display: none;

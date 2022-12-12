@@ -556,3 +556,23 @@
         width: 250px;
     }
 }
+
+/* footer */
+
+@media (max-width: 620px) {
+    footer {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 439px) {
+    .social span {
+        display: none;
+    }
+}
