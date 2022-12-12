@@ -576,3 +576,18 @@
         display: none;
     }
 }
+
+/* feedback modal window */
+@media (max-width:449px) {
+    .modal-feedback {
+        width: 320px;
+    }
+
+    .modal-feedback p {
+        font-size: 16px;
+    }
+
+    .modal-feedback input {
+        width: 290px;
+    }
+}
