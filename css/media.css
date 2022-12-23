@@ -135,6 +135,24 @@
     }
 }
 
+@media (max-width:530px) {
+    .watch-btn a {
+        font-size: small;
+        left: 19%;
+        top: 30%;
+    }
+
+
+}
+
+@media (max-width:425px) {
+    .slider-navigation i {
+        color: #000000;
+        top: 235px;
+    }
+
+}
+
 @media (max-width: 384px) {
     .slider-navigation i {
         color: #000000;
@@ -533,6 +551,8 @@
         width: auto;
     }
 }
+
+
 
 
 @media (max-width: 900px) {

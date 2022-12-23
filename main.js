@@ -1,5 +1,3 @@
-'use strict'
-
 //burger menu
 
 const menu = document.getElementById("menu");
