@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PetStory zoo website">
+    <meta name="keywords" content="zoo, animals, ethical zoo, shelter, petting zoo">
+    <meta name="author" content="Mari Chemia">
+    <meta property="og:url" content="https://marichemia.github.io/women-final/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PetStory Zoo">
+    <meta property="og:description" content="we help animals and allow you to have a wild experience">
+    <meta property="og:image"
+        content="https://img.freepik.com/free-photo/closeup-beautiful-shot-peacock-with-its-tail-open_181624-29049.jpg">
     <title>PetStory</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -54,7 +63,8 @@
                 <div>
                     <h1 class="page-heading">we have<br>all your<br><span>favorite</span><br>animals<br>here</h1>
                 </div>
-                <a href="#our-animals"><button type="button" class="watch-btn">learn more</button></a>
+                <div class="watch-btn"><a href="#our-animals">learn more</a></div>
+
             </div>
         </div>
     </section>
@@ -184,7 +194,7 @@
     </section>
     <div class="none modal" id="modal">
         <i class="fa-regular fa-circle-xmark modal-close-btn"></i>
-        <form action="">
+        <form>
             <div class="name-input-container">
                 <div>
                     <label for="name">First Name:<span class="asterisk">*</span></label>
@@ -198,18 +208,18 @@
             <div class="credit-card-input">
                 <label for="credit-card">Card Number:<span class="asterisk">*</span></label>
                 <br>
-                <input type="number" name="credit-card" id="credit-card" required minlength="16" maxlength="16">
+                <input type="number" name="credit-card" id="credit-card" required>
                 <br>
-                <label for="date">Expiration Date:<span class="asterisk">*</span></label>
+                <label>Expiration Date:<span class="asterisk">*</span></label>
                 <label for="cvv" class="cvv-label">CVV:<span class="asterisk">*</span></label>
                 <br>
                 <span>
-                    <input type="number" name="exp-date" id="exp-date" required minlength="2" maxlength="2">
+                    <input type="number" name="date" id="exp-date" required>
                     <span>/</span>
-                    <input type="number" name="exp-date" id="exp-date" required minlength="4" maxlength="4">
+                    <input type="number" name="date-month" id="exp-date-year" required>
                 </span>
                 <span>
-                    <input type="number" name="cvv" id="cvv" required minlength="3" maxlength="3"></span>
+                    <input type="number" name="cvv" id="cvv" required></span>
             </div>
             <button class="pay-btn" type="submit">Feed a Friend</button>
         </form>

@@ -185,14 +185,22 @@ nav {
     width: 298px;
     height: 54px;
     border-radius: 25px;
-    text-transform: uppercase;
+
     background-color: #b0f809;
     border: none;
-    color: #448606;
-    font-weight: 700;
     position: absolute;
     top: 70%;
     left: 15%;
+}
+
+.watch-btn a {
+    text-transform: uppercase;
+    color: #448606;
+    font-weight: 700;
+    font-family: 'Roboto Regular', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 30%;
 }
 
 .slider-container {
@@ -590,6 +598,10 @@ form input {
 }
 
 #exp-date {
+    width: 70px;
+}
+
+#exp-date-year {
     width: 70px;
 }
 
